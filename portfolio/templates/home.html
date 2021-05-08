@@ -12,6 +12,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 
+    <link rel="stylesheet" src="./custom.css">
 
 
 
@@ -21,140 +22,225 @@
 
 </head>
 
+<style>
+    body {
+
+        background-image:
+            linear-gradient(rgba(118, 224, 212, 0.815), rgba(118, 224, 212, 0.815)),
+            url("https://source.unsplash.com/YlVjrBkfXt8/1900x900");
+
+    }
+
+    .container {
+    max-width: 1280px;
+    padding: 40px 180px;
+    padding-bottom: 200px; 
+    }
+
+    .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  } 
+   
+
+
+</style>
+
+<style>
+    body {
+      
+      color: #ffffff;
+      font-size: 100px;
+    }
+
+    .text-1 {
+      animation: text1;
+    }
+    .text-2 {
+      animation: text2;
+    }
+    .text-1,
+    .text-2 {
+      overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+      position: relative;
+      animation-duration: 20s;
+      animation-timing-function: steps(25, end);
+      animation-iteration-count: infinite;
+    }
+    .text-1::after,
+    .text-2::after {
+      content: "|";
+      position: absolute;
+      right: 0;
+      animation: caret infinite;
+      animation-duration: 1s;
+      animation-timing-function: steps(1, end);
+      
+    }
+    @keyframes text2 {
+      0%,
+      50%,
+      100% {
+        width: 0;
+      }
+      60%,
+      90% {
+        width: 21.2em;
+      }
+    }
+    @keyframes text1 {
+      0%,
+      50%,
+      100% {
+        width: 0;
+      }
+      10%,
+      40% {
+        width: 17em;
+      }
+    }
+    @keyframes caret {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+
+    
+  </style>
+
+
+
 
 <body>
+
+
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Yahya Warsi</a>
+            <a class="navbar-brand" style="font-size: 25px;" href="/">Yahya</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" style="color: turquoise; font-size: 20px;" aria-current="page"
+                            href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projects">Projects</a>
+                        <a class="nav-link" style="font-size: 20px;" href="/about">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact Me</a>
+                        <a class="nav-link" style="font-size: 20px;" href="/projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 20px;" href="/contact">Contact</a>
                     </li>
 
 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
             </div>
         </div>
     </nav>
 
 
+  
+    
+                <h1>
+                    <div 
+                        class="position-absolute top-50 start-50 translate-middle" style="font-size:5vw; font-family: Verdana; color: black "> I'm Yahya Warsi</div>
 
-    <div class="container mt-0"></div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+                        
+                    <span class="text-1  text-center my-5 position-absolute top-50 start-50 translate-middle"
+                        style="font-size:2vw; font-family: Verdana; color: black  "><br>a python developer</span>
+                </h1>
+ 
+    
+    
 
 
-
-
-
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://source.unsplash.com/Fa0pTKuoDVY/1900x500" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://source.unsplash.com/VL-OvBppmzI/1900x500" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://source.unsplash.com/FO7JIlwjOtU/1900x500/" class="d-block w-100" alt="...">
-            </div>
-
-        </div>
+    <!-- <h1>
+        <span class=" text-1 container text-center my-5 position-absolute top-50 start-50 translate-middle " style="font-size:5vw; font-family: Verdana; color: black  ">I am a great heading for your static web page</span>
+        <span class=" text-2 container text-center my-5 position-absolute top-50 start-50 translate-middle " style="font-size:5vw; font-family: Verdana; color: black  ">Really? And this is made without JavaScriipt?</span>
+    </h1> -->
 
 
 
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
 
-    </div>
 
-    <div class="containter my-3">
-        <h1 class="text-center my-3">Hello, I'm Yahya Warsi</h1>
-        <h3 class="text-center my-3"> I am a...</h3>
 
-        <!-- cardds-->
-        <div class="row">
-            <div class="col-md-4">
 
-                
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/ieic5Tq8YMk/500x300/?programming, html"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-               
+    <!-- carousel
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+
+
+
+
 
             </div>
-            <div class="col-md-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x300/?programming, html" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="carousel-inner" >
+                <div class="carousel-item active carousel-img-width" style="background:#000;opacity:0.3; max-width:100%;width: 100% ; " data-bs-interval="5000">
+                    <img src="https://source.unsplash.com/Fa0pTKuoDVY/1900x600" class="d-block w-100 h-100 carousel-img-width" alt="...">
                 </div>
+                <div class="carousel-item  " style="background:#000;opacity:0.4;" data-bs-interval="5000">
+                    <img src="https://source.unsplash.com/VL-OvBppmzI/1900x900" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item " style="background:#000;opacity:0.4;" data-bs-interval="5000">
+                    <img src="https://source.unsplash.com/FO7JIlwjOtU/1900x900/" class="d-block w-100 h-100 " alt="...">
+                </div>
+
             </div>
 
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x300/?programming, html" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+            <header> 
+                <h1 class="container text-center my-5 position-absolute top-50 start-50 translate-middle  "
+                    style="font-size:5vw; font-family: Verdana; color: black  ">Hello, I'm Yahya</h1>
+                </header> 
+
+         
+
+
+
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
         </div>
 
-    </div>
-    </div>
+    </div> -->
+
+
+
 
 
 
